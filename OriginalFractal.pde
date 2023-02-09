@@ -5,7 +5,7 @@ public void setup() {
 
 public void draw() {
   background(255);
-  myFractal(200,200,300,500);
+  myFractal(200,250,300,350);
 }
   
 public void myFractal(int x, int y, int siz, int t) {
