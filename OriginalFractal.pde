@@ -4,11 +4,11 @@ public void setup() {
 }
 
 public void draw() {
-  background(0);
-  myFractal(200,200,300);
+  background(255);
+  myFractal(200,200,300,500);
 }
   
-public void myFractal(int x, int y, int siz) {
+public void myFractal(int x, int y, int siz, int t) {
 pushMatrix();
  translate(width*0.5, height*0.5);
  rotate(frameCount*0.40);
@@ -17,7 +17,7 @@ pushMatrix();
  strokeWeight(1);
  fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
  if (siz > 100) {
-   myFractal(x - siz/3, y, siz/2);
+   myFractal(x - siz/3, y, siz/2,t);
  }
 }
 
